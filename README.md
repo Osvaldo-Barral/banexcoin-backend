@@ -13,40 +13,47 @@ API REST desarrollada con **NestJS**, **TypeORM** y **PostgreSQL** para la gesti
 
 1. Clonar el repositorio:
 
-   ```bash
-   git clone https://github.com/Osvaldo-Barral/criptos.git
+  ```bash
+  git clone https://github.com/Osvaldo-Barral/criptos.git
 
-Instalar dependencias:
+2. Instalar dependencias:
 
-Una vez clonado el repositorio, entra en la carpeta backend y ejecuta los siguientes comandos para instalar las dependencias necesarias:
+  Una vez clonado el repositorio, entra en la carpeta backend y ejecuta los siguientes comandos para instalar las dependencias necesarias:
 
-cd backend
-npm install
+  ```bash
+  npm install
 
-Esto instalará todos los módulos de Node.js necesarios para el funcionamiento de la API.
+  Esto instalará todos los módulos de Node.js necesarios para el funcionamiento de la API.
 
-Levantar el Proyecto Localmente
-Para correr la API de forma local, asegúrate de tener PostgreSQL corriendo en tu máquina. Luego, usa el siguiente comando en la terminal dentro de la carpeta backend:
+## 🌱 Levantar el Proyecto Localmente
 
-npm run start:dev
-Este comando levantará el servidor en modo de desarrollo y la API estará disponible en http://localhost:3000.
+  Para correr la API de forma local, asegúrate de tener PostgreSQL corriendo en tu máquina. Luego, usa el siguiente comando en la terminal dentro de la carpeta backend:
 
-🛠️ Base de Datos
-En la carpeta src/database/ encontrarás dos archivos relacionados con la base de datos:
+  ```bash
+  npm run start:dev
 
-banexcoin_backup.sql: Un archivo de respaldo de la base de datos en formato .sql que puedes importar directamente a PostgreSQL para restaurar la base de datos con datos previos.
+  Este comando levantará el servidor en modo de desarrollo y la API estará disponible en http://localhost:3000.
 
-banexcoin.sql: Este archivo contiene el script de creación y llenado de la base de datos.
+## 🛠️ Base de Datos
+  En la carpeta src/database/ encontrarás dos archivos relacionados con la base de datos:
 
-Comandos Útiles
-Iniciar el servidor en desarrollo:
-npm run start:dev
+  banexcoin_backup.sql: Un archivo de respaldo de la base de datos en formato .sql que puedes importar directamente a PostgreSQL para restaurar la base de datos con datos previos.
 
-Generar un módulo (reemplaza module-name con el nombre de tu módulo):
-nest generate module module-name
+  banexcoin.sql: Este archivo contiene el script de creación y llenado de la base de datos.
 
-Generar un servicio:
-nest generate service module-name
+## 📜 Comandos Útiles
+  Iniciar el servidor en desarrollo:
+  ```bash
+  npm run start:dev
 
-Generar un controlador:
-nest generate controller module-name
+  Generar un módulo (reemplaza module-name con el nombre de tu módulo):
+    ```bash
+  nest generate module module-name
+
+  Generar un servicio:
+    ```bash
+  nest generate service module-name
+
+  Generar un controlador:
+    ```bash
+  nest generate controller module-name
