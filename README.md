@@ -1,4 +1,4 @@
-# 💰 BbanexCoin API
+# 💰 banexCoin API
 
 API REST desarrollada con **NestJS**, **TypeORM** y **PostgreSQL** para la gestión de cuentas, transacciones y comisiones dentro de un sistema de billetera digital.
 
