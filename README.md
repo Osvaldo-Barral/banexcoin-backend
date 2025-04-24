@@ -13,15 +13,13 @@ API REST desarrollada con **NestJS**, **TypeORM** y **PostgreSQL** para la gesti
 
 1. Clonar el repositorio:
 
-  ```bash
-  git clone https://github.com/Osvaldo-Barral/criptos.git
+  ```bashgit clone https://github.com/Osvaldo-Barral/criptos.git
 
 2. Instalar dependencias:
 
   Una vez clonado el repositorio, entra en la carpeta backend y ejecuta los siguientes comandos para instalar las dependencias necesarias:
 
-  ```bash
-  npm install
+  ```bashnpm install
 
   Esto instalará todos los módulos de Node.js necesarios para el funcionamiento de la API.
 
@@ -29,8 +27,7 @@ API REST desarrollada con **NestJS**, **TypeORM** y **PostgreSQL** para la gesti
 
   Para correr la API de forma local, asegúrate de tener PostgreSQL corriendo en tu máquina. Luego, usa el siguiente comando en la terminal dentro de la carpeta backend:
 
-  ```bash
-  npm run start:dev
+  ```bashnpm run start:dev
 
   Este comando levantará el servidor en modo de desarrollo y la API estará disponible en http://localhost:3000.
 
@@ -43,17 +40,13 @@ API REST desarrollada con **NestJS**, **TypeORM** y **PostgreSQL** para la gesti
 
 ## 📜 Comandos Útiles
   Iniciar el servidor en desarrollo:
-  ```bash
-  npm run start:dev
+  ```bashnpm run start:dev
 
   Generar un módulo (reemplaza module-name con el nombre de tu módulo):
-    ```bash
-  nest generate module module-name
+    ```bashnest generate module module-name
 
   Generar un servicio:
-    ```bash
-  nest generate service module-name
+    ```bashnest generate service module-name
 
   Generar un controlador:
-    ```bash
-  nest generate controller module-name
+    ```bashnest generate controller module-name
