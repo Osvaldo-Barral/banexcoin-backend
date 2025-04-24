@@ -13,14 +13,12 @@ API REST desarrollada con **NestJS**, **TypeORM** y **PostgreSQL** para la gesti
 
 1. Clonar el repositorio:
 
-  ```bash
   git clone https://github.com/Osvaldo-Barral/criptos.git
 
 2. Instalar dependencias:
 
   Una vez clonado el repositorio, entra en la carpeta backend y ejecuta los siguientes comandos para instalar las dependencias necesarias:
 
-  ```bash
   npm install
 
   Esto instalará todos los módulos de Node.js necesarios para el funcionamiento de la API.
