@@ -6,11 +6,17 @@ import { CuentaDto } from './cuenta.dto';
 import { SaldoDto } from './saldo.dto';
 import { ContactoDto } from './contacto.dto';
 
+import { ConfigService } from '@nestjs/config';
+import { config } from 'dotenv';
+config();
+const configService = new ConfigService();
+
 @Injectable()
 export class CuentasService {
 
     // Usuario simulado como logueado. En un sistema real, esto debería ser dinámico (por token, sesión, etc.)
-    private readonly userId = 2;
+    // Por ahora se definira el usuario en las variables de entorno
+    private readonly userId = configService.get('ID_USUARIO');
 
     constructor(
         @InjectRepository(Cuenta)
@@ -38,6 +44,9 @@ export class CuentasService {
             this.cuentaRepository.find({
                 where: { id: Not(this.userId) },
                 relations: ['usuario'],
+                order: {
+                    id: "ASC"
+                }
             }),
             this.cuentaRepository.findOne({
                 where: { usuario: { id: this.userId } },
@@ -55,6 +64,8 @@ export class CuentasService {
                 cuenta: contacto.id,
             })),
             saldo: {
+                id: this.userId,
+                cuenta: cuentaUsuario.id,
                 saldo: Number(cuentaUsuario.saldo),
             },
         };
