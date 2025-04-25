@@ -13,7 +13,7 @@ API REST desarrollada con **NestJS**, **TypeORM** y **PostgreSQL** para la gesti
 
 1. Clonar el repositorio:
 
-  git clone https://github.com/Osvaldo-Barral/criptos.git
+  git clone https://github.com/Osvaldo-Barral/banexcoin-backend
 
 2. Instalar dependencias:
 
