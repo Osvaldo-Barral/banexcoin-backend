@@ -55,3 +55,5 @@ API REST desarrollada con **NestJS**, **TypeORM** y **PostgreSQL** para la gesti
 ## 📜 Comandos Útiles
   Iniciar el servidor en desarrollo:
 
+  npm run start:dev
+
